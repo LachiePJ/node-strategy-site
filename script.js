@@ -1,3 +1,8 @@
+const assetStyles=document.createElement('link');
+assetStyles.rel='stylesheet';
+assetStyles.href='asset-overrides.css';
+document.head.appendChild(assetStyles);
+
 document.documentElement.classList.add('js');
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reveals=[...document.querySelectorAll('.reveal')];
