@@ -3,6 +3,11 @@ assetStyles.rel='stylesheet';
 assetStyles.href='asset-overrides.css';
 document.head.appendChild(assetStyles);
 
+const typographyStyles=document.createElement('link');
+typographyStyles.rel='stylesheet';
+typographyStyles.href='typography.css';
+document.head.appendChild(typographyStyles);
+
 document.documentElement.classList.add('js');
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reveals=[...document.querySelectorAll('.reveal')];
