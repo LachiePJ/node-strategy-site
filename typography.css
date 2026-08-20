@@ -1,0 +1,86 @@
+/* Typography and spacing calibration against the current Wix desktop site */
+@media (min-width:721px){
+  body{font-size:16px;line-height:1.5}
+
+  .hero{padding:50px 24px 54px}
+  .hero-wordmark{font-size:72px;margin-bottom:22px}
+  .hero h1{font-size:28px;line-height:1.22;margin-bottom:20px}
+  .hero p{font-size:14px;line-height:1.58;max-width:760px;margin-bottom:24px}
+  .pill{height:34px;font-size:11px;padding:0 28px}
+  .hero-actions{gap:28px}
+
+  .shade{padding:52px 24px}
+  .silos-grid{gap:120px}
+  .silos h2{font-size:34px;line-height:1.1;margin-bottom:26px}
+  .silos h3{font-size:31px;line-height:1.17}
+  .silos-copy{padding-top:5px}
+  .silos-copy p{font-size:14px;line-height:1.58;margin-bottom:18px}
+
+  .overview{padding:50px 24px 42px}
+  .overview h2{font-size:30px;line-height:1.2;margin-bottom:14px}
+  .overview-intro{font-size:14px;line-height:1.55;margin-bottom:31px}
+  .overview-block{padding:0 30px}
+  .overview-block h3{font-size:19px;margin-bottom:6px}
+  .overview-block h4{font-size:15px;line-height:1.4;margin-bottom:15px}
+  .overview-block p{font-size:13px;line-height:1.58;margin-bottom:13px}
+  .small-pill{height:31px;font-size:10px;margin-top:8px}
+  .overview .outcome{font-size:15px;margin-top:30px;margin-bottom:5px}
+  .overview .fine{font-size:11px;line-height:1.5}
+
+  .system-intro{padding:52px 24px 58px}
+  .system-intro h2{font-size:31px;line-height:1.2;margin-bottom:18px}
+  .system-intro p{font-size:13px;line-height:1.6;margin-bottom:13px;max-width:1030px}
+  .benchmark-image{margin:35px auto 28px}
+  .bringing{font-size:20px;line-height:1.35;margin-bottom:14px}
+
+  .pulse-system{padding:43px 24px 60px}
+  .product h2{font-size:30px;line-height:1.2;margin-bottom:6px}
+  .product h4{font-size:14px;line-height:1.45;margin-bottom:31px}
+  .product-copy p,.product-copy li,.system-product p,.system-add{font-size:13px;line-height:1.58}
+  .product-copy p{margin-bottom:14px}
+  .product-copy ul{margin:8px 0 15px;padding-left:19px}
+  .product-copy .pill{height:31px;font-size:10px;margin-top:8px}
+  .pulse-product{column-gap:72px}
+  .system-product{margin-top:50px;column-gap:58px}
+  .system-intro-copy{margin-bottom:31px!important}
+  .system-add strong{margin-bottom:12px}
+  .system-add li{margin:10px 0}
+
+  .advisory-overlay{padding:52px 24px 50px}
+  .advisory h2{font-size:31px;line-height:1.2;margin-bottom:7px}
+  .advisory h4{font-size:15px;line-height:1.45;margin-bottom:21px}
+  .advisory-wrap>p{font-size:13px;line-height:1.58;margin-bottom:12px}
+  .cap-title{margin-top:25px!important}
+  .cards-wrap{margin-top:23px;gap:27px}
+  .cap-card{padding:25px 25px 26px}
+  .cap-icon{font-size:31px;margin-bottom:8px}
+  .cap-card h3{font-size:15px;margin-bottom:9px}
+  .cap-card h5{font-size:12px;line-height:1.42;margin-bottom:13px}
+  .cap-card p{font-size:11px;line-height:1.55}
+  .advisory-close{font-size:12px!important;line-height:1.55;margin-top:27px!important}
+
+  .clients{padding:41px 24px 49px}
+  .clients h3{font-size:20px;margin-bottom:30px}
+  .logo-grid{row-gap:24px}
+
+  .team{padding:53px 24px 61px}
+  .team-title{margin-bottom:34px}
+  .team-title h2{font-size:29px;margin-bottom:12px}
+  .team-title p{font-size:13px;line-height:1.55}
+  .person-copy{padding:18px 21px 20px;min-height:265px}
+  .person-copy small{font-size:10px}
+  .person-copy h3{font-size:19px;line-height:1.3;margin:5px 0 12px}
+  .person-copy p{font-size:12px;line-height:1.55;margin-bottom:14px}
+  .socials{margin-top:20px}
+
+  .footer{padding:52px 24px 64px}
+  .definition{font-size:10px;line-height:1.5}
+  .location{font-size:12px;line-height:1.9}
+  .follow{font-size:11px}
+  .copyright{font-size:10px}
+  .contact-form h3{font-size:17px;margin-bottom:8px}
+  .contact-form p{font-size:12px}
+  .contact-form label{font-size:10px;margin-top:19px}
+  .contact-form input,.contact-form textarea{font-size:10px}
+  .contact-btn{font-size:9px;height:27px}
+}
