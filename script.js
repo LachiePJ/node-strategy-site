@@ -8,6 +8,11 @@ typographyStyles.rel='stylesheet';
 typographyStyles.href='typography.css';
 document.head.appendChild(typographyStyles);
 
+const fidelityStyles=document.createElement('link');
+fidelityStyles.rel='stylesheet';
+fidelityStyles.href='fidelity.css';
+document.head.appendChild(fidelityStyles);
+
 document.documentElement.classList.add('js');
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reveals=[...document.querySelectorAll('.reveal')];
@@ -16,7 +21,7 @@ if(reduce||!('IntersectionObserver' in window)){
 }else{
   const io=new IntersectionObserver(entries=>entries.forEach(e=>{
     if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
-  }),{threshold:.08,rootMargin:'0px 0px -4%'});
+  }),{threshold:.06,rootMargin:'0px 0px -6%'});
   reveals.forEach(el=>io.observe(el));
 }
 const toggle=document.querySelector('.menu-toggle');
