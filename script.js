@@ -13,6 +13,14 @@ fidelityStyles.rel='stylesheet';
 fidelityStyles.href='fidelity.css';
 document.head.appendChild(fidelityStyles);
 
+// Replace placeholder advisory glyphs with clean vector icons.
+const iconMarkup=[
+`<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M24 5v7M24 36v7M5 24h7M36 24h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`,
+`<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 9v20l-15 9-15-9V14z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M9 14l15 10 15-10M24 24v19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>`,
+`<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 19-15 19L9 24z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15 24h18M24 12v24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`
+];
+document.querySelectorAll('.cap-icon').forEach((el,i)=>{el.innerHTML=iconMarkup[i]||'';});
+
 document.documentElement.classList.add('js');
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reveals=[...document.querySelectorAll('.reveal')];
