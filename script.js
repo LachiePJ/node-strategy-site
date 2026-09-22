@@ -18,6 +18,11 @@ layoutStyles.rel='stylesheet';
 layoutStyles.href='layout-pass.css';
 document.head.appendChild(layoutStyles);
 
+const sourceStyles=document.createElement('link');
+sourceStyles.rel='stylesheet';
+sourceStyles.href='source-fidelity.css';
+document.head.appendChild(sourceStyles);
+
 // Replace placeholder advisory glyphs with clean vector icons.
 const iconMarkup=[
 `<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M24 5v7M24 36v7M5 24h7M36 24h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>`,
