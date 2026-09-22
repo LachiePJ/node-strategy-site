@@ -10,10 +10,12 @@
 .benchmark-segment{cursor:pointer;outline:none;transform-origin:211.501px 211.751px;transition:opacity 450ms ease,transform 450ms cubic-bezier(.22,1,.36,1)}
 .benchmark-segment:not(.is-active){opacity:.34}
 .benchmark-segment.is-active{opacity:1;transform:scale(1.024)}
-.benchmark-segment path{transition:filter 450ms ease,opacity 450ms ease}
-.benchmark-segment:not(.is-active) path{filter:saturate(.55) brightness(1.12)}
-.benchmark-segment.is-active path{filter:brightness(.82) saturate(1.2) contrast(1.06)}
-.benchmark-segment.is-value.is-active path{filter:brightness(.72) saturate(.85) contrast(1.05)}
+.benchmark-segment{transition:opacity 450ms ease,transform 450ms cubic-bezier(.22,1,.36,1),filter 450ms ease}
+.benchmark-segment:not(.is-active){filter:saturate(.55) brightness(1.12)}
+.benchmark-segment.is-active{filter:brightness(.82) saturate(1.2) contrast(1.06)}
+.benchmark-segment.is-value.is-active,#ring_value_inner.is-active{filter:brightness(.72) saturate(.85) contrast(1.05)}
+#ring_value_inner{transition:opacity 450ms ease,filter 450ms ease}
+#ring_value_inner:not(.is-active){opacity:.34}
 .benchmark-segment:hover:not(.is-active){opacity:.48}
 .benchmark-segment:focus-visible{outline:2px solid #000;outline-offset:2px}
 .benchmark-radar{pointer-events:none}
