@@ -12,6 +12,34 @@ const score={};dims.forEach(d=>score[d.id]=d.score);const pts=order.map(k=>polar
 const dots={};order.forEach(k=>{const p=polar(radius(score[k]),angle(k)),c=document.createElementNS(ns,'circle');c.classList.add('benchmark-data-dot');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r','3');c.setAttribute('fill','#fff');c.setAttribute('stroke','#3d4856');c.setAttribute('stroke-width','1');data.appendChild(c);dots[k]=c});
 const centre=document.createElementNS(ns,'g');centre.classList.add('benchmark-centre');centre.innerHTML='<circle cx="211.501" cy="211.751" r="44" fill="#fff" stroke="#e5e9ed" stroke-width="1"/><text x="211.501" y="198.5" text-anchor="middle" fill="#000" style="font-family:Poppins,Arial,sans-serif;font-size:7.25px;font-weight:600;letter-spacing:.05em">Node CX</text><text x="211.501" y="207.5" text-anchor="middle" fill="#000" style="font-family:Poppins,Arial,sans-serif;font-size:7.25px;font-weight:600">Benchmark™</text><text x="211.501" y="222" text-anchor="middle" dominant-baseline="middle" fill="#000" style="font-family:Poppins,Arial,sans-serif;font-size:24px;font-weight:700">72</text><text x="211.501" y="234.5" text-anchor="middle" fill="#000" style="font-family:Poppins,Arial,sans-serif;font-size:6.5px;font-weight:500">Overall Score</text>';svg.appendChild(centre);
 const label=document.getElementById('benchmarkDimensionLabel'),desc=document.getElementById('benchmarkDimensionDescription'),copy=document.getElementById('benchmarkDimensionCopy'),segs={};
-dims.forEach((d,i)=>{const el=svg.querySelector('#segment_'+d.id);if(!el)return;const g=el.parentNode;g.classList.add('benchmark-segment');if(d.id==='value')g.classList.add('is-value');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',d.label+' dimension');g.addEventListener('click',()=>activate(i,true));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate(i,true)}});segs[d.id]=g});
-let active=0,timer=null,first=true;function activate(i,user){active=i;const d=dims[i];Object.entries(segs).forEach(([k,g])=>g.classList.toggle('is-active',k===d.id));Object.entries(dots).forEach(([k,c])=>c.classList.toggle('is-active',k===d.id));const upd=()=>{label.textContent=d.label;desc.textContent=d.description};if(first){upd();first=false}else{copy.classList.add('is-fading');setTimeout(()=>{upd();copy.classList.remove('is-fading')},cfg.transitionMs)}if(user)cycle()}function cycle(){clearInterval(timer);timer=setInterval(()=>activate((active+1)%dims.length,false),cfg.autoCycleMs)}activate(0,false);cycle()}
+const valueRing=svg.querySelector('#ring_value_inner');
+dims.forEach((d,i)=>{
+  const el=svg.querySelector('#segment_'+d.id);
+  if(!el)return;
+  el.classList.add('benchmark-segment');
+  if(d.id==='value')el.classList.add('is-value');
+  el.setAttribute('tabindex','0');
+  el.setAttribute('role','button');
+  el.setAttribute('aria-label',d.label+' dimension');
+  el.addEventListener('mouseenter',()=>activate(i,false));
+  el.addEventListener('click',()=>activate(i,true));
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate(i,true)}});
+  segs[d.id]=el;
+});
+let active=0,timer=null,first=true;
+function activate(i,user){
+  active=i;
+  const d=dims[i];
+  Object.entries(segs).forEach(([k,el])=>el.classList.toggle('is-active',k===d.id));
+  if(valueRing)valueRing.classList.toggle('is-active',d.id==='value');
+  Object.entries(dots).forEach(([k,c])=>c.classList.toggle('is-active',k===d.id));
+  const upd=()=>{label.textContent=d.label;desc.textContent=d.description};
+  if(first){upd();first=false}else{
+    copy.classList.add('is-fading');
+    setTimeout(()=>{upd();copy.classList.remove('is-fading')},cfg.transitionMs);
+  }
+  if(user)cycle();
+}
+function cycle(){clearInterval(timer);timer=setInterval(()=>activate((active+1)%dims.length,false),cfg.autoCycleMs)}
+activate(0,false);cycle()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();})();
