@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Source-fidelity overrides derived from the exported Wix page source. Loaded last. */
+:root{
+  --node-content:980px;
+  --node-grey:#dedee0;
+  --node-text:#282828;
+  --node-blue:#2600ff;
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',Arial,Helvetica,sans-serif!important;
+  color:var(--node-text);
+  font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+}
+h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetica,sans-serif}
+
+@media (min-width:721px){
+  /* Wix desktop is built around a 980px content grid. */
+  .header-inner,.hero-content,.silos-grid,.overview-wrap,.system-wrap,.product-wrap,.advisory-wrap,.client-wrap,.team-wrap,.footer-wrap{
+    width:min(var(--node-content),calc(100% - 48px))!important;
+    max-width:var(--node-content)!important;
+  }
+
+  /* Transparent sticky header, 88px high in source. */
+  .site-header{
+    position:absolute!important;
+    top:0!important;left:0!important;right:0!important;
+    height:88px!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    z-index:60!important;
+  }
+  .header-inner{
+    height:88px!important;
+    padding:0!important;
+    margin:0 auto!important;
+    display:flex!important;
+    align-items:flex-start!important;
+    justify-content:space-between!important;
+  }
+  .node-mark{margin-top:18px!important;margin-left:0!important}
+  .node-mark .mark{width:78px!important;height:50px!important}
+  .desktop-nav{padding-top:24px!important}
+  .desktop-nav a{
+    color:rgba(255,255,255,.48)!important;
+    font-size:16px!important;
+    font-weight:300!important;
+    line-height:1!important;
+    transition:color .4s ease!important;
+  }
+  .desktop-nav a:hover{color:#fff!important}
+
+  /* Hero source: 980 x 577 media, 99px Comfortaa wordmark, 24px heading, 16px body. */
+  .hero{
+    min-height:577px!important;
+    height:577px!important;
+    padding:88px 0 0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background-position:center!important;
+  }
+  .hero-content{
+    transform:none!important;
+    text-align:center!important;
+    margin:0 auto!important;
+    padding-top:12px!important;
+  }
+  .hero-wordmark{
+    font-family:'Comfortaa',Arial,sans-serif!important;
+    font-size:99px!important;
+    font-weight:700!important;
+    line-height:.5!important;
+    letter-spacing:.15em!important;
+    padding-left:.15em!important;
+    margin:0 0 60px!important;
+  }
+  .hero h1{
+    font-size:24px!important;
+    line-height:1.6!important;
+    font-weight:500!important;
+    margin:0 0 35px!important;
+  }
+  .hero p{
+    font-size:16px!important;
+    line-height:1.6!important;
+    font-weight:300!important;
+    max-width:900px!important;
+    margin:0 auto 34px!important;
+  }
+  .hero-actions{gap:42px!important;justify-content:center!important}
+  .hero-actions .pill{
+    min-width:250px!important;
+    height:42px!important;
+    font-size:14px!important;
+    font-weight:500!important;
+  }
+
+  /* Source button behaviour: .2s transition; secondary becomes transparent with dark border/text. */
+  .pill{
+    border:1px solid transparent!important;
+    transition:all .2s ease,visibility 0s!important;
+    transform:none!important;
+    box-shadow:none!important;
+  }
+  .pill:hover{transform:none!important;box-shadow:none!important;filter:none!important}
+  .gradient:hover{
+    background:transparent!important;
+    border-color:#fff!important;
+    color:#fff!important;
+  }
+  .muted{background:rgba(138,138,138,.82)!important}
+  .muted:hover{
+    background:transparent!important;
+    border-color:#282828!important;
+    color:#282828!important;
+  }
+  .hero .muted:hover{border-color:#fff!important;color:#fff!important}
+
+  /* Silos source typography: 24px heading, 18px body / 1.4. */
+  .silos{min-height:370px!important}
+  .silos .shade{
+    min-height:370px!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .silos-grid{
+    grid-template-columns:430px 1fr!important;
+    gap:96px!important;
+    align-items:center!important;
+  }
+  .silos h2,.silos h3{
+    font-size:24px!important;
+    line-height:1.45!important;
+    font-weight:500!important;
+    margin:0!important;
+  }
+  .silos h2{margin-bottom:30px!important}
+  .silos-copy p{
+    font-size:18px!important;
+    line-height:1.4!important;
+    font-weight:300!important;
+    text-align:justify!important;
+    margin:0 0 24px!important;
+    max-width:none!important;
+  }
+  .silos-copy p:last-child{margin-bottom:0!important}
+
+  /* Overview source sizes. */
+  .overview{padding:48px 0 45px!important}
+  .overview-wrap{column-gap:62px!important}
+  .overview h2{
+    font-size:26px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    margin-bottom:5px!important;
+  }
+  .overview-intro{
+    font-size:16px!important;
+    line-height:1.4!important;
+    font-weight:300!important;
+    margin-bottom:38px!important;
+  }
+  .overview-block{padding:0 30px!important}
+  .overview-block h3{
+    font-size:22px!important;
+    line-height:1!important;
+    font-weight:500!important;
+    margin-bottom:19px!important;
+  }
+  .overview-block h4{
+    font-size:16px!important;
+    line-height:1.2!important;
+    font-weight:400!important;
+    margin-bottom:19px!important;
+  }
+  .overview-block p{
+    font-size:16px!important;
+    line-height:1.4!important;
+    font-weight:200!important;
+    margin-bottom:18px!important;
+  }
+  .overview .small-pill{
+    height:34px!important;
+    font-size:14px!important;
+    font-weight:700!important;
+  }
+  .overview .outcome{font-size:18px!important;margin-top:34px!important}
+  .overview .fine{font-size:16px!important;line-height:1.4!important}
+
+  /* Integrated system / benchmark: match 933 x 409 iframe footprint from source. */
+  .system-intro{padding:46px 0 50px!important}
+  .system-intro h2{
+    font-size:30px!important;
+    line-height:1.4!important;
+    font-weight:400!important;
+    margin-bottom:18px!important;
+  }
+  .system-intro p{
+    font-size:16px!important;
+    line-height:1.5!important;
+    font-weight:300!important;
+    max-width:908px!important;
+    margin-bottom:14px!important;
+  }
+  .benchmark-module{
+    width:933px!important;
+    max-width:933px!important;
+    min-height:409px!important;
+    margin:28px auto 24px!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .benchmark-row{width:100%!important}
+  .benchmark-wheel-host{width:560px!important;flex-basis:560px!important}
+  .benchmark-copy{width:250px!important;flex-basis:250px!important}
+  .benchmark-label{font-size:30px!important;line-height:1.2!important;font-weight:500!important}
+  .benchmark-description{font-size:24px!important;line-height:1.45!important;font-weight:300!important}
+  .bringing{
+    font-size:30px!important;
+    line-height:1.35!important;
+    font-weight:400!important;
+    margin:30px 0 16px!important;
+  }
+
+  /* Pulse source title 30px / subtitle 18px. */
+  .pulse-system{padding:42px 0 60px!important}
+  .product h2{
+    font-size:30px!important;
+    line-height:1.9!important;
+    font-weight:400!important;
+    margin-bottom:0!important;
+  }
+  .product h4{
+    font-size:18px!important;
+    line-height:1.9!important;
+    font-weight:300!important;
+    margin-bottom:34px!important;
+  }
+  .pulse-product{
+    grid-template-columns:392px 1fr!important;
+    column-gap:56px!important;
+  }
+  .report-img{width:392px!important}
+  .product-copy p,.product-copy li,.system-product p{
+    font-size:16px!important;
+    line-height:1.45!important;
+    font-weight:300!important;
+  }
+  .product-copy p{margin-bottom:18px!important}
+  .product-copy ul{margin:10px 0 20px!important}
+  .system-product{
+    grid-template-columns:285px 1fr!important;
+    column-gap:32px!important;
+    margin-top:55px!important;
+  }
+  .system-intro-copy{margin-bottom:22px!important}
+  .system-add{
+    text-align:right!important;
+    padding-left:0!important;
+  }
+  .system-add strong{font-size:18px!important;font-weight:400!important}
+  .system-add li{
+    font-size:18px!important;
+    line-height:1.45!important;
+    font-weight:300!important;
+    margin:7px 0!important;
+  }
+
+  /* Advisory source uses the same Poppins scale, not oversized cards. */
+  .advisory-overlay{padding:48px 0 48px!important}
+  .advisory h2{font-size:30px!important;line-height:1.45!important;font-weight:400!important}
+  .advisory h4{font-size:18px!important;line-height:1.45!important;font-weight:300!important}
+  .advisory-wrap>p{font-size:16px!important;line-height:1.5!important;font-weight:300!important}
+  .cap-title{margin-top:28px!important}
+  .cards-wrap{width:900px!important;gap:24px!important}
+  .cap-card{min-height:250px!important;padding:26px 24px!important}
+  .cap-card h3{font-size:16px!important;font-weight:500!important}
+  .cap-card h5{font-size:14px!important;line-height:1.45!important;font-weight:400!important}
+  .cap-card p{font-size:13px!important;line-height:1.55!important;font-weight:300!important}
+  .advisory-close{font-size:14px!important;line-height:1.55!important}
+
+  /* Clients source gallery items sit in 113 x 84 cells. */
+  .clients{padding:42px 0 54px!important}
+  .clients h3{font-size:20px!important;font-weight:400!important;margin-bottom:30px!important}
+  .logo-grid{
+    grid-template-columns:repeat(5,113px)!important;
+    justify-content:space-between!important;
+    column-gap:0!important;
+    row-gap:24px!important;
+  }
+  .logo-grid>*{width:113px!important;height:84px!important}
+  .logo-grid img{
+    max-width:113px!important;
+    max-height:52px!important;
+  }
+  .logo-grid .wordmark{font-size:12px!important}
+
+  /* Team / footer remain on the same 980 grid and Poppins scale. */
+  .team{padding:52px 0 62px!important}
+  .team-title{margin-bottom:34px!important}
+  .team-title h2{font-size:30px!important;font-weight:400!important}
+  .team-title p{font-size:16px!important;line-height:1.5!important;font-weight:300!important}
+  .team-grid{width:800px!important;gap:12px 14px!important}
+  .person-copy h3{font-size:20px!important;font-weight:500!important}
+  .person-copy p{font-size:14px!important;line-height:1.55!important;font-weight:300!important}
+
+  .footer{padding:50px 0 60px!important}
+  .footer-wrap{gap:100px!important}
+  .contact-form h3{font-size:20px!important;font-weight:400!important}
+  .contact-form p,.contact-form label,.contact-form input,.contact-form textarea{font-family:'Poppins',Arial,sans-serif!important}
+
+  /* Wix-like reveal: soft opacity + translate, no exaggerated motion. */
+  .js .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)!important;
+  }
+  .js .reveal.in{opacity:1;transform:none}
+}
+
+@media (max-width:720px){
+  body{font-family:'Poppins',Arial,Helvetica,sans-serif!important}
+  .site-header{height:70px!important}
+  .header-inner{height:70px!important;padding:0 18px!important}
+  .node-mark{margin-top:14px!important}
+  .node-mark .mark{width:55px!important;height:36px!important}
+  .hero{
+    min-height:550px!important;
+    padding:86px 20px 42px!important;
+  }
+  .hero-wordmark{
+    font-family:'Comfortaa',Arial,sans-serif!important;
+    font-size:58px!important;
+    font-weight:700!important;
+    letter-spacing:.15em!important;
+    padding-left:.15em!important;
+    margin-bottom:38px!important;
+  }
+  .hero h1{font-size:22px!important;line-height:1.45!important;margin-bottom:26px!important}
+  .hero p{font-size:16px!important;line-height:1.55!important;margin-bottom:28px!important}
+  .hero-actions{gap:12px!important;width:100%!important}
+  .hero-actions .pill{width:min(300px,100%)!important;height:40px!important;font-size:13px!important}
+
+  .silos .shade{padding:40px 22px!important}
+  .silos h2,.silos h3{font-size:23px!important;line-height:1.4!important}
+  .silos h2{margin-bottom:26px!important}
+  .silos-copy p{font-size:16px!important;line-height:1.5!important;text-align:left!important;margin-bottom:20px!important}
+
+  .overview,.system-intro,.pulse-system,.clients,.team{padding-left:22px!important;padding-right:22px!important}
+  .overview h2{font-size:24px!important;line-height:1.45!important}
+  .overview-intro,.overview-block p,.system-intro p,.product-copy p,.product-copy li,.system-product p{font-size:16px!important;line-height:1.5!important}
+  .overview-block h3{font-size:20px!important}
+  .overview-block h4{font-size:16px!important}
+
+  .system-intro h2{font-size:26px!important;line-height:1.4!important}
+  .benchmark-module{min-height:auto!important;margin:24px auto!important}
+  .benchmark-row{gap:18px!important}
+  .benchmark-wheel-host{width:min(100%,340px)!important}
+  .benchmark-copy{max-width:340px!important;min-height:110px!important}
+  .benchmark-label{font-size:22px!important}
+  .benchmark-description{font-size:16px!important;line-height:1.5!important}
+  .bringing{font-size:24px!important;line-height:1.4!important}
+
+  .product h2{font-size:27px!important;line-height:1.45!important}
+  .product h4{font-size:17px!important;line-height:1.5!important}
+  .system-add{text-align:left!important}
+  .system-add strong,.system-add li{font-size:16px!important}
+
+  .advisory-overlay{padding:42px 22px!important}
+  .advisory h2{font-size:27px!important}
+  .advisory h4{font-size:17px!important}
+  .advisory-wrap>p{font-size:16px!important;line-height:1.5!important}
+
+  .clients h3{font-size:20px!important}
+  .logo-grid{
+    grid-template-columns:repeat(3,1fr)!important;
+    column-gap:16px!important;
+    row-gap:18px!important;
+  }
+  .logo-grid>*{width:100%!important;height:72px!important}
+  .logo-grid img{max-width:105px!important;max-height:44px!important}
+
+  .team-title h2{font-size:27px!important}
+  .team-title p{font-size:16px!important}
+  .person-copy p{font-size:14px!important}
+}
