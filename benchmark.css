@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+.benchmark-module{width:100%;max-width:933px;margin:30px auto 22px;color:#000;font-family:'Poppins',Arial,Helvetica,sans-serif}
+.benchmark-row{display:flex;align-items:center;justify-content:center;gap:36px}
+.benchmark-wheel-host{flex:0 1 560px;width:min(100%,560px);position:relative}
+.benchmark-wheel-host svg{display:block;width:100%;height:auto;overflow:visible}
+.benchmark-copy{flex:0 1 250px;width:250px;min-height:180px;text-align:left;transition:opacity 400ms ease;align-self:center}
+.benchmark-copy.is-fading{opacity:0}
+.benchmark-label{font-size:30px;font-weight:500;line-height:1.2;margin:0 0 16px}
+.benchmark-description{font-size:24px;font-weight:300;line-height:1.45;margin:0}
+.benchmark-segment{cursor:pointer;outline:none;transform-origin:211.501px 211.751px;transition:opacity 450ms ease,transform 450ms cubic-bezier(.22,1,.36,1)}
+.benchmark-segment:not(.is-active){opacity:.34}
+.benchmark-segment.is-active{opacity:1;transform:scale(1.024)}
+.benchmark-segment path{transition:filter 450ms ease,opacity 450ms ease}
+.benchmark-segment:not(.is-active) path{filter:saturate(.55) brightness(1.12)}
+.benchmark-segment.is-active path{filter:brightness(.82) saturate(1.2) contrast(1.06)}
+.benchmark-segment.is-value.is-active path{filter:brightness(.72) saturate(.85) contrast(1.05)}
+.benchmark-segment:hover:not(.is-active){opacity:.48}
+.benchmark-segment:focus-visible{outline:2px solid #000;outline-offset:2px}
+.benchmark-radar{pointer-events:none}
+.benchmark-data-dot{transition:r .35s ease,stroke-width .35s ease}
+.benchmark-data-dot.is-active{r:4.2;stroke-width:1.4;stroke:#000}
+.benchmark-centre{pointer-events:none}
+@media(max-width:720px){.benchmark-module{margin:24px auto 18px}.benchmark-row{flex-direction:column;gap:20px}.benchmark-wheel-host{width:min(100%,360px);flex-basis:auto}.benchmark-copy{width:100%;max-width:320px;min-height:115px}.benchmark-label{font-size:22px;margin-bottom:8px}.benchmark-description{font-size:16px;line-height:1.5}}
