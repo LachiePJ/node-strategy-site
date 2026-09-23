@@ -1127,3 +1127,19 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
   .logo-grid img[alt="Ultra Philanthropy"]{width:80px!important;max-height:27px!important}
   .logo-grid img[alt="Coeliac Australia"]{width:72px!important;max-height:28px!important}
 }
+
+/* CTA typography fidelity — source uses different weights for the two overview buttons */
+@media (min-width:721px){
+  .overview-block:first-of-type .small-pill{
+    font-size:14px!important;
+    font-weight:700!important;
+  }
+  .overview-block:nth-of-type(2) .small-pill{
+    font-size:14px!important;
+    font-weight:400!important;
+  }
+}
+@media (max-width:720px){
+  .overview-block:first-of-type .small-pill{font-weight:700!important}
+  .overview-block:nth-of-type(2) .small-pill{font-weight:400!important}
+}
