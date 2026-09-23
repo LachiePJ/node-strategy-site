@@ -1001,3 +1001,82 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
   .person-copy h3{font-size:20px!important;font-weight:500!important}
   .person-copy p{font-size:15px!important;line-height:1.35!important}
 }
+
+/* Client logo optical normalization — tuned by perceived visual mass, not source canvas size */
+@media (min-width:721px){
+  .logo-grid{
+    grid-template-columns:repeat(5,113px)!important;
+    justify-content:space-between!important;
+    row-gap:24px!important;
+    align-items:center!important;
+  }
+  .logo-grid>*{
+    width:113px!important;
+    height:64px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  .logo-grid img{
+    width:auto!important;
+    height:auto!important;
+    object-fit:contain!important;
+    max-width:none!important;
+    max-height:none!important;
+    margin:auto!important;
+  }
+
+  /* Row 1 */
+  .logo-grid img[alt="Afterpay"]{width:103px!important;max-height:29px!important}
+  .logo-grid .wordmark{
+    width:96px!important;
+    height:auto!important;
+    font-size:12px!important;
+    line-height:.92!important;
+    font-weight:800!important;
+    letter-spacing:-.025em!important;
+    text-align:center!important;
+  }
+  .logo-grid img[alt="Telstra"]{width:80px!important;max-height:28px!important}
+  .logo-grid img[alt="Coca-Cola"]{width:104px!important;max-height:34px!important}
+  .logo-grid img[alt="Chevron"]{width:91px!important;max-height:28px!important}
+
+  /* Row 2 */
+  .logo-grid img[alt="Qantas"]{width:108px!important;max-height:30px!important}
+  .logo-grid img[alt="Medibank"]{width:106px!important;max-height:31px!important}
+  .logo-grid img[alt="Johnson & Johnson"]{width:104px!important;max-height:24px!important}
+  .logo-grid img[alt="P&G"]{width:78px!important;max-height:38px!important}
+  .logo-grid img[alt="nbn"]{width:93px!important;max-height:32px!important}
+
+  /* Row 3 */
+  .logo-grid img[alt="O2"]{width:46px!important;max-height:40px!important}
+  .logo-grid img[alt="Vodafone"]{width:92px!important;max-height:25px!important}
+  .logo-grid img[alt="Verizon"]{width:103px!important;max-height:29px!important}
+  .logo-grid img[alt="AstraZeneca"]{width:97px!important;max-height:25px!important}
+  .logo-grid img[alt="Westpac"]{width:107px!important;max-height:29px!important}
+
+  /* Row 4 */
+  .logo-grid img[alt="Ultra Philanthropy"]{width:105px!important;max-height:39px!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:101px!important;max-height:40px!important}
+}
+
+@media (max-width:720px){
+  .logo-grid>*{height:54px!important}
+  .logo-grid img[alt="Afterpay"]{width:84px!important;max-height:24px!important}
+  .logo-grid .wordmark{width:76px!important;font-size:10px!important}
+  .logo-grid img[alt="Telstra"]{width:66px!important;max-height:23px!important}
+  .logo-grid img[alt="Coca-Cola"]{width:84px!important;max-height:28px!important}
+  .logo-grid img[alt="Chevron"]{width:74px!important;max-height:23px!important}
+  .logo-grid img[alt="Qantas"]{width:88px!important;max-height:25px!important}
+  .logo-grid img[alt="Medibank"]{width:86px!important;max-height:25px!important}
+  .logo-grid img[alt="Johnson & Johnson"]{width:84px!important;max-height:20px!important}
+  .logo-grid img[alt="P&G"]{width:63px!important;max-height:31px!important}
+  .logo-grid img[alt="nbn"]{width:76px!important;max-height:26px!important}
+  .logo-grid img[alt="O2"]{width:38px!important;max-height:33px!important}
+  .logo-grid img[alt="Vodafone"]{width:75px!important;max-height:21px!important}
+  .logo-grid img[alt="Verizon"]{width:84px!important;max-height:24px!important}
+  .logo-grid img[alt="AstraZeneca"]{width:78px!important;max-height:21px!important}
+  .logo-grid img[alt="Westpac"]{width:87px!important;max-height:24px!important}
+  .logo-grid img[alt="Ultra Philanthropy"]{width:85px!important;max-height:32px!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:82px!important;max-height:33px!important}
+}
