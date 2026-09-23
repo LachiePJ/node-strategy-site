@@ -1080,3 +1080,50 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
   .logo-grid img[alt="Ultra Philanthropy"]{width:85px!important;max-height:32px!important}
   .logo-grid img[alt="Coeliac Australia"]{width:82px!important;max-height:33px!important}
 }
+
+/* Second optical pass from rendered staging screenshot */
+@media (min-width:721px){
+  .logo-grid>*{height:58px!important}
+
+  .logo-grid img[alt="Afterpay"]{width:96px!important;max-height:25px!important}
+  .logo-grid .wordmark{width:88px!important;font-size:11px!important;line-height:.92!important}
+  .logo-grid img[alt="Telstra"]{width:76px!important;max-height:24px!important}
+  .logo-grid img[alt="Coca-Cola"]{width:82px!important;max-height:27px!important}
+  .logo-grid img[alt="Chevron"]{width:84px!important;max-height:24px!important}
+
+  .logo-grid img[alt="Qantas"]{width:100px!important;max-height:27px!important}
+  .logo-grid img[alt="Medibank"]{width:99px!important;max-height:27px!important}
+  .logo-grid img[alt="Johnson & Johnson"]{width:112px!important;max-height:22px!important}
+  .logo-grid img[alt="P&G"]{width:58px!important;max-height:29px!important}
+  .logo-grid img[alt="nbn"]{width:87px!important;max-height:28px!important}
+
+  .logo-grid img[alt="O2"]{width:34px!important;max-height:31px!important}
+  .logo-grid img[alt="Vodafone"]{width:98px!important;max-height:24px!important}
+  .logo-grid img[alt="Verizon"]{width:98px!important;max-height:26px!important}
+  .logo-grid img[alt="AstraZeneca"]{width:104px!important;max-height:24px!important}
+  .logo-grid img[alt="Westpac"]{width:101px!important;max-height:26px!important}
+
+  .logo-grid img[alt="Ultra Philanthropy"]{width:99px!important;max-height:33px!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:88px!important;max-height:34px!important}
+}
+
+@media (max-width:720px){
+  .logo-grid>*{height:50px!important}
+  .logo-grid img[alt="Afterpay"]{width:78px!important;max-height:21px!important}
+  .logo-grid .wordmark{width:70px!important;font-size:9px!important}
+  .logo-grid img[alt="Telstra"]{width:62px!important;max-height:20px!important}
+  .logo-grid img[alt="Coca-Cola"]{width:67px!important;max-height:22px!important}
+  .logo-grid img[alt="Chevron"]{width:68px!important;max-height:20px!important}
+  .logo-grid img[alt="Qantas"]{width:81px!important;max-height:22px!important}
+  .logo-grid img[alt="Medibank"]{width:80px!important;max-height:22px!important}
+  .logo-grid img[alt="Johnson & Johnson"]{width:91px!important;max-height:18px!important}
+  .logo-grid img[alt="P&G"]{width:47px!important;max-height:24px!important}
+  .logo-grid img[alt="nbn"]{width:71px!important;max-height:23px!important}
+  .logo-grid img[alt="O2"]{width:28px!important;max-height:26px!important}
+  .logo-grid img[alt="Vodafone"]{width:79px!important;max-height:20px!important}
+  .logo-grid img[alt="Verizon"]{width:79px!important;max-height:21px!important}
+  .logo-grid img[alt="AstraZeneca"]{width:84px!important;max-height:20px!important}
+  .logo-grid img[alt="Westpac"]{width:82px!important;max-height:21px!important}
+  .logo-grid img[alt="Ultra Philanthropy"]{width:80px!important;max-height:27px!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:72px!important;max-height:28px!important}
+}
