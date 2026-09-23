@@ -1192,3 +1192,45 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
   .logo-grid img[alt="Chevron"]{width:76px!important;transform:scale(1.18)!important}
   .logo-grid img[alt="nbn"]{width:78px!important;transform:scale(1.12)!important}
 }
+
+/* SVG client-logo pass: remove raster whitespace compensation and size true vector bounds */
+@media (min-width:721px){
+  .logo-grid img[alt="Vodafone"]{
+    width:96px!important;
+    max-height:26px!important;
+    transform:none!important;
+  }
+  .logo-grid img[alt="Telstra"]{
+    width:84px!important;
+    max-height:26px!important;
+    transform:none!important;
+  }
+  .logo-grid img[alt="AstraZeneca"]{
+    width:100px!important;
+    max-height:24px!important;
+    transform:none!important;
+  }
+  .logo-grid img[alt="Johnson & Johnson"]{
+    width:108px!important;
+    max-height:23px!important;
+    transform:none!important;
+  }
+  .logo-grid img[alt="Chevron"]{
+    width:86px!important;
+    max-height:27px!important;
+    transform:none!important;
+  }
+  .logo-grid img[alt="nbn"]{
+    width:88px!important;
+    max-height:30px!important;
+    transform:none!important;
+  }
+}
+@media (max-width:720px){
+  .logo-grid img[alt="Vodafone"]{width:78px!important;max-height:22px!important;transform:none!important}
+  .logo-grid img[alt="Telstra"]{width:69px!important;max-height:21px!important;transform:none!important}
+  .logo-grid img[alt="AstraZeneca"]{width:81px!important;max-height:20px!important;transform:none!important}
+  .logo-grid img[alt="Johnson & Johnson"]{width:87px!important;max-height:19px!important;transform:none!important}
+  .logo-grid img[alt="Chevron"]{width:70px!important;max-height:22px!important;transform:none!important}
+  .logo-grid img[alt="nbn"]{width:72px!important;max-height:24px!important;transform:none!important}
+}
