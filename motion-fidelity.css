@@ -1,0 +1,84 @@
+
+/* Node motion system reconstructed from the exported Wix source */
+@keyframes nodeFadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes nodeGrowIn{
+  from{opacity:0;transform:translateY(120px) scale(.8)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes nodeFloatIn{
+  from{opacity:0;transform:translateY(60px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes nodeSlideInLeft{
+  from{opacity:0;transform:translateX(-100%);clip-path:polygon(0 0,0 0,0 100%,0 100%)}
+  to{opacity:1;transform:translateX(0);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  /* Disable the older one-size-fits-all reveal system. */
+  .js .reveal{
+    opacity:1!important;
+    transform:none!important;
+    transition:none!important;
+  }
+
+  .node-motion{will-change:opacity,transform}
+  .node-motion.motion-fade:not(.motion-in){opacity:0}
+  .node-motion.motion-grow:not(.motion-in){opacity:0;transform:translateY(120px) scale(.8)}
+  .node-motion.motion-float:not(.motion-in){opacity:0;transform:translateY(60px)}
+  .node-motion.motion-slide-left:not(.motion-in){
+    opacity:0;
+    transform:translateX(-100%);
+    clip-path:polygon(0 0,0 0,0 100%,0 100%);
+  }
+
+  .node-motion.motion-fade.motion-in{
+    animation:nodeFadeIn 1200ms 1ms cubic-bezier(.445,.05,.55,.95) both;
+  }
+  .node-motion.motion-grow.motion-in{
+    animation:nodeFadeIn 960ms 1ms cubic-bezier(.645,.045,.355,1) both,
+              nodeGrowIn 1200ms 1ms cubic-bezier(.645,.045,.355,1) both;
+  }
+  .node-motion.motion-float.motion-in{
+    animation:nodeFloatIn 1200ms 1ms cubic-bezier(.445,.05,.55,.95) both;
+  }
+  .node-motion.motion-slide-left.motion-in{
+    animation:nodeSlideInLeft 1200ms 1ms cubic-bezier(.645,.045,.355,1) both;
+  }
+
+  /* Hero copy uses the same long Wix fade family. */
+  .hero-content.node-motion.motion-fade.motion-in{
+    animation-duration:1200ms;
+  }
+
+  /* Overview groups are the exact Wix fade+grow motion. */
+  .overview-block.node-motion.motion-grow{transform-origin:50% 50%}
+
+  /* Stagger paired overview groups slightly without changing the source motion itself. */
+  .overview-block:nth-of-type(2).node-motion.motion-grow.motion-in{
+    animation-delay:90ms,90ms;
+  }
+
+  /* Advisory card shell floats; its content slides in from the left. */
+  .cap-card.node-motion.motion-float:nth-child(2).motion-in{animation-delay:90ms}
+  .cap-card.node-motion.motion-float:nth-child(3).motion-in{animation-delay:180ms}
+  .cap-card .motion-slide-left:nth-child(2).motion-in{animation-delay:70ms}
+  .cap-card .motion-slide-left:nth-child(3).motion-in{animation-delay:140ms}
+  .cap-card .motion-slide-left:nth-child(4).motion-in{animation-delay:210ms}
+
+  /* Product media/content: restrained source-like float, not generic pop. */
+  .report-img.node-motion.motion-float.motion-in,
+  .system-img.node-motion.motion-float.motion-in{
+    animation-duration:1200ms;
+  }
+
+  /* Team cards use a restrained float-in to avoid the old abrupt appearance. */
+  .person.node-motion.motion-float:nth-child(2).motion-in{animation-delay:90ms}
+  .person.node-motion.motion-float:nth-child(3).motion-in{animation-delay:180ms}
+}
+
+/* Smooth-scroll target breathing room */
+#pulse,#advisory,#team{scroll-margin-top:0}
