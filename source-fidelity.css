@@ -660,3 +660,344 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
     margin:0 auto!important;
   }
 }
+
+/* === Full HTML / visual audit corrections ===
+   Values below are taken directly from the exported Wix page source. */
+@media (min-width:721px){
+
+  /* Overview / "Node exposes..." */
+  .overview{
+    background:#dbdbdb!important;
+    padding:56px 0 68px!important;
+  }
+  .overview-wrap{
+    width:980px!important;
+    max-width:980px!important;
+    grid-template-columns:451px 451px!important;
+    column-gap:60px!important;
+  }
+  .overview h2{
+    grid-column:1/-1!important;
+    width:908px!important;
+    justify-self:center!important;
+    font-size:26px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+    margin:0 0 35px!important;
+  }
+  .overview-intro{
+    grid-column:1/-1!important;
+    width:847px!important;
+    justify-self:center!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    font-weight:400!important;
+    text-align:center!important;
+    margin:0 0 41px!important;
+  }
+  .overview-block{
+    width:451px!important;
+    min-height:231px!important;
+    padding:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+  }
+  .overview-block h3{
+    font-size:22px!important;
+    line-height:1!important;
+    font-weight:500!important;
+    text-align:center!important;
+    margin:0 0 25px!important;
+  }
+  .overview-block h4{
+    font-size:16px!important;
+    line-height:1.2!important;
+    font-weight:400!important;
+    text-align:center!important;
+    margin:0 0 25px!important;
+  }
+  .overview-block p{
+    font-size:16px!important;
+    line-height:1.4!important;
+    font-weight:200!important;
+    text-align:left!important;
+    margin:0 0 22px!important;
+  }
+  .overview-block .small-pill{
+    height:40px!important;
+    min-height:40px!important;
+    font-size:14px!important;
+    font-weight:700!important;
+    margin-top:auto!important;
+    align-self:center!important;
+  }
+  .overview-block:first-of-type .small-pill{width:325px!important;min-width:325px!important}
+  .overview-block:nth-of-type(2) .small-pill{width:288px!important;min-width:288px!important}
+  .overview .outcome{
+    grid-column:1/-1!important;
+    width:649px!important;
+    justify-self:center!important;
+    font-size:18px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+    margin:48px 0 0!important;
+  }
+  .overview .fine{
+    grid-column:1/-1!important;
+    width:649px!important;
+    justify-self:center!important;
+    font-size:18px!important;
+    line-height:1.6!important;
+    font-weight:300!important;
+    text-align:center!important;
+    margin:0!important;
+  }
+
+  /* Integrated-system section */
+  .system-intro{
+    background:#fff!important;
+    padding:45px 0 39px!important;
+  }
+  .system-wrap{width:980px!important;max-width:980px!important}
+  .system-intro h2{
+    width:908px!important;
+    margin:0 auto 26px!important;
+    font-size:26px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+  .system-intro> .system-wrap > p{
+    width:839px!important;
+    max-width:839px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    font-weight:300!important;
+    text-align:center!important;
+  }
+  .system-intro> .system-wrap > p:nth-of-type(1){margin-bottom:16px!important}
+  .system-intro> .system-wrap > p:nth-of-type(2){margin-bottom:26px!important}
+  .bringing{
+    width:908px!important;
+    margin:0 auto 20px!important;
+    font-size:26px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+  .bringing + p{
+    width:826px!important;
+    max-width:826px!important;
+    margin:0 auto!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    font-weight:300!important;
+    text-align:center!important;
+  }
+  .bringing + p + p{
+    width:826px!important;
+    max-width:826px!important;
+    margin:16px auto 0!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    font-weight:300!important;
+    text-align:center!important;
+  }
+
+  /* Pulse + System source typography */
+  .pulse-system{background:#e8e6e6!important;padding:42px 0 60px!important}
+  .product h2{
+    font-size:30px!important;
+    line-height:1.9!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+  .product h4{
+    font-size:18px!important;
+    line-height:1.9!important;
+    font-weight:300!important;
+    text-align:center!important;
+  }
+  .pulse-product{grid-template-columns:392px 462px!important;column-gap:41px!important;justify-content:center!important}
+  .report-img{width:392px!important;height:548px!important;object-fit:cover!important}
+  .product-copy{width:462px!important}
+  .product-copy p{
+    font-size:16px!important;
+    line-height:1.2!important;
+    font-weight:300!important;
+    margin:0 0 18px!important;
+  }
+  .product-copy p strong{font-weight:400!important}
+  .product-copy ul{padding-left:0!important;list-style-position:inside!important;margin:0 0 20px!important}
+  .product-copy li{
+    font-size:14px!important;
+    line-height:1.2!important;
+    font-weight:300!important;
+    margin:0 0 4px!important;
+  }
+  .system-product{margin-top:32px!important}
+  .system-intro-copy{
+    width:916px!important;
+    max-width:916px!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    font-weight:300!important;
+    text-align:left!important;
+    margin:0 auto 28px!important;
+  }
+
+  /* Advisory: exact Wix scale and card proportions */
+  .advisory h2{
+    font-size:30px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+  .advisory h4{
+    font-size:18px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+  }
+  .advisory-wrap>p{
+    font-size:16px!important;
+    line-height:1.6!important;
+    font-weight:300!important;
+  }
+  .cap-title{font-size:18px!important;font-weight:400!important}
+  .cards-wrap{
+    width:800px!important;
+    grid-template-columns:repeat(3,240px)!important;
+    justify-content:space-between!important;
+    gap:0!important;
+  }
+  .cap-card{
+    width:240px!important;
+    min-height:0!important;
+    padding:39px 28px 41px!important;
+    border-radius:10px!important;
+    background:rgba(237,240,251,.73)!important;
+    box-shadow:0 0 18px rgba(0,22,176,.19)!important;
+  }
+  .cap-icon{margin-bottom:12px!important}
+  .cap-card h3{
+    width:203px!important;
+    font-size:18px!important;
+    line-height:1.4!important;
+    font-weight:600!important;
+    color:#1D67CD!important;
+    margin:0 0 11px!important;
+  }
+  .cap-card h5{
+    width:183px!important;
+    font-size:14px!important;
+    line-height:1.4!important;
+    font-weight:500!important;
+    margin:0 0 20px!important;
+  }
+  .cap-card p{
+    width:183px!important;
+    font-size:14px!important;
+    line-height:1.4!important;
+    font-weight:300!important;
+    margin:0!important;
+  }
+  .advisory-close{
+    width:908px!important;
+    margin:30px auto 0!important;
+    font-size:18px!important;
+    line-height:1.6!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+
+  /* Clients */
+  .clients{background:#e2e4eb!important;padding:60px 0 46px!important}
+  .clients h3{
+    font-size:30px!important;
+    line-height:1.4!important;
+    font-weight:400!important;
+    margin-bottom:43px!important;
+  }
+
+  /* Team */
+  .team{padding:83px 0 41px!important}
+  .team-title{width:980px!important;max-width:980px!important;margin:0 auto 43px!important}
+  .team-title h2{
+    font-size:30px!important;
+    line-height:1.4!important;
+    font-weight:500!important;
+    text-align:center!important;
+    margin-bottom:32px!important;
+  }
+  .team-title h2::after{
+    content:""!important;
+    display:block!important;
+    width:30px!important;
+    border-top:3px solid currentColor!important;
+    margin:13px auto 0!important;
+  }
+  .team-title p{
+    width:631px!important;
+    margin:0 auto!important;
+    font-size:18px!important;
+    line-height:1.5!important;
+    font-weight:400!important;
+    text-align:center!important;
+  }
+  .team-grid{width:818px!important;grid-template-columns:403px 403px!important;gap:9px 12px!important}
+  .person>img{width:409px!important;height:334px!important;object-fit:cover!important}
+  .person-copy{min-height:0!important;padding:0 31px 33px!important}
+  .person-copy small{
+    display:block!important;
+    font-size:16px!important;
+    line-height:normal!important;
+    margin-top:0!important;
+    margin-bottom:2px!important;
+  }
+  .person-copy h3{
+    font-size:20px!important;
+    line-height:normal!important;
+    font-weight:500!important;
+    margin:0 0 30px!important;
+  }
+  .person-copy p{
+    font-size:16px!important;
+    line-height:1.3!important;
+    font-weight:400!important;
+    margin:0 0 25px!important;
+  }
+  .person:nth-child(3){grid-column:1!important}
+
+  /* Footer source type scale */
+  .definition{font-size:14px!important;line-height:1.4!important}
+  .location{font-size:18px!important;line-height:2!important}
+  .copyright{font-size:14px!important;line-height:1.6!important}
+  .contact-form h3,.contact-form>p{
+    font-size:18px!important;
+    line-height:2!important;
+    font-weight:400!important;
+  }
+}
+
+/* Mobile: preserve hierarchy and weights from desktop source instead of old tiny fallback values. */
+@media (max-width:720px){
+  .overview{background:#dbdbdb!important}
+  .overview-block p{text-align:left!important;font-weight:300!important}
+  .overview .outcome{font-weight:400!important}
+  .overview .fine{font-weight:300!important}
+  .overview .small-pill{height:40px!important;font-size:13px!important;font-weight:700!important}
+  .system-intro h2,.bringing{font-weight:400!important}
+  .product-copy p{line-height:1.35!important}
+  .product-copy li{font-size:14px!important;line-height:1.3!important}
+  .advisory-close{font-size:16px!important;line-height:1.5!important;font-weight:400!important}
+  .clients h3{font-size:26px!important;font-weight:400!important}
+  .team-title h2{font-weight:500!important}
+  .team-title p{font-size:16px!important;line-height:1.5!important;font-weight:400!important}
+  .person-copy small{font-size:14px!important}
+  .person-copy h3{font-size:20px!important;font-weight:500!important}
+  .person-copy p{font-size:15px!important;line-height:1.35!important}
+}
