@@ -1274,3 +1274,15 @@ h1,h2,h3,h4,h5,p,li,a,button,input,textarea{font-family:'Poppins',Arial,Helvetic
   .logo-grid img[alt="Ultra Philanthropy"]{width:78px!important;max-height:31px!important}
   .logo-grid img[alt="Coeliac Australia"]{width:75px!important;max-height:29px!important}
 }
+
+/* Emergency fidelity correction for verified Qantas / nbn / Coeliac artwork */
+@media (min-width:721px){
+  .logo-grid img[alt="Qantas"]{width:100px!important;max-height:28px!important;transform:none!important}
+  .logo-grid img[alt="nbn"]{width:92px!important;max-height:31px!important;transform:none!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:92px!important;max-height:38px!important;transform:none!important}
+}
+@media (max-width:720px){
+  .logo-grid img[alt="Qantas"]{width:81px!important;max-height:23px!important}
+  .logo-grid img[alt="nbn"]{width:75px!important;max-height:25px!important}
+  .logo-grid img[alt="Coeliac Australia"]{width:75px!important;max-height:31px!important}
+}
