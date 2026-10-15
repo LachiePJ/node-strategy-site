@@ -31,6 +31,7 @@ jobs:
           curl -fL --retry 3 'https://static.wixstatic.com/media/aee4f3_dc81a4fd6d1644d38c403ab5447704e5~mv2.jpg' -o assets/site/lachlan.jpg
           curl -fL --retry 3 'https://static.wixstatic.com/media/aee4f3_cdd217ce58dd4592a6daf01e9e5247e7~mv2.jpg' -o assets/site/cliff.jpg
           curl -fL --retry 3 'https://static.wixstatic.com/media/aee4f3_109b25cf7b0d4467a384bcf92937655c~mv2.png' -o assets/site/hero.png
+          curl -fL --retry 3 'https://static.wixstatic.com/media/ea77ec_cf1611ecc5d949d5ab5b88390412dd52~mv2.gif' -o assets/site/hero.gif
           curl -fL --retry 3 'https://static.wixstatic.com/media/ea77ec_866a9e2f4d754521a64db665ad034266~mv2.png' -o assets/site/silos.png
           curl -fL --retry 3 'https://static.wixstatic.com/media/ea77ec_b4383a86779944ada93d8f8a88354740~mv2.jpg' -o assets/site/advisory-background-old.jpg
           curl -fL --retry 3 'https://static.wixstatic.com/media/ea77ec_7eb9e732f3a5482a98b33939391e5fe6~mv2.jpg' -o assets/site/advisory-background.jpg
@@ -49,12 +50,13 @@ jobs:
             'https://static.wixstatic.com/media/aee4f3_dc81a4fd6d1644d38c403ab5447704e5~mv2.jpg': 'assets/site/lachlan.jpg',
             'https://static.wixstatic.com/media/aee4f3_cdd217ce58dd4592a6daf01e9e5247e7~mv2.jpg': 'assets/site/cliff.jpg',
             'https://static.wixstatic.com/media/aee4f3_109b25cf7b0d4467a384bcf92937655c~mv2.png': 'assets/site/hero.png',
+            'https://static.wixstatic.com/media/ea77ec_cf1611ecc5d949d5ab5b88390412dd52~mv2.gif': 'assets/site/hero.gif',
             'https://static.wixstatic.com/media/ea77ec_866a9e2f4d754521a64db665ad034266~mv2.png': 'assets/site/silos.png',
             'https://static.wixstatic.com/media/ea77ec_b4383a86779944ada93d8f8a88354740~mv2.jpg': 'assets/site/advisory-background-old.jpg',
             'https://static.wixstatic.com/media/ea77ec_7eb9e732f3a5482a98b33939391e5fe6~mv2.jpg': 'assets/site/advisory-background.jpg',
           }
 
-          for filename in ['index.html', 'styles.css', 'asset-overrides.css', 'source-fidelity.css', 'script.js', 'benchmark.css', 'motion-fidelity.css']:
+          for filename in ['index.html', 'styles.css', 'asset-overrides.css', 'source-fidelity.css', 'fidelity.css', 'script.js', 'benchmark.css', 'motion-fidelity.css']:
               p = Path(filename)
               if not p.exists():
                   continue
@@ -80,6 +82,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm .github/workflows/localize-assets.yml
-          git add assets/site index.html styles.css asset-overrides.css source-fidelity.css script.js benchmark.css motion-fidelity.css
+          git add assets/site index.html styles.css asset-overrides.css source-fidelity.css fidelity.css script.js benchmark.css motion-fidelity.css
           git commit -m 'Localize remaining Wix site assets'
           git push
