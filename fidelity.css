@@ -24,7 +24,7 @@
     padding:44px 24px 48px!important;
     background:
       linear-gradient(rgba(43,0,255,.76),rgba(43,0,255,.76)),
-      url('https://static.wixstatic.com/media/ea77ec_cf1611ecc5d949d5ab5b88390412dd52~mv2.gif') center/cover no-repeat!important;
+      url('assets/site/hero.gif') center/cover no-repeat!important;
   }
   .hero-content{width:min(900px,100%)}
   .hero-wordmark{font-size:84px!important;line-height:.96;letter-spacing:.22em;margin:0 0 20px!important;padding-left:.22em;font-weight:400}
@@ -90,7 +90,7 @@
 
   /* Advisory */
   .advisory{
-    background:#228bc8 url('https://static.wixstatic.com/media/ea77ec_7eb9e732f3a5482a98b33939391e5fe6~mv2.jpg') center 46%/cover no-repeat!important;
+    background:#228bc8 url('assets/site/advisory-background.jpg') center 46%/cover no-repeat!important;
   }
   .advisory-overlay{padding:64px 24px 60px!important;background:linear-gradient(180deg,rgba(27,139,202,.70),rgba(39,124,180,.72))!important}
   .advisory-wrap{width:min(1110px,100%)}
@@ -173,7 +173,7 @@
   .site-header{height:52px;background:#18191b}
   .header-inner{height:52px;padding:0 17px}
   .node-mark .mark{width:42px!important;height:28px!important}
-  .hero{padding:34px 18px 36px!important;background:linear-gradient(rgba(43,0,255,.77),rgba(43,0,255,.77)),url('https://static.wixstatic.com/media/ea77ec_cf1611ecc5d949d5ab5b88390412dd52~mv2.gif') center/cover no-repeat!important}
+  .hero{padding:34px 18px 36px!important;background:linear-gradient(rgba(43,0,255,.77),rgba(43,0,255,.77)),url('assets/site/hero.gif') center/cover no-repeat!important}
   .hero-wordmark{font-size:46px!important;margin-bottom:15px!important}
   .hero h1{font-size:20px!important;line-height:1.22}
   .hero p{font-size:14px!important;line-height:1.56}
